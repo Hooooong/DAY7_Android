@@ -53,12 +53,18 @@ public class CalculatorActivity extends AppCompatActivity implements ICalculator
 
     }
 
+    /**
+     * 다시 시작했을 시
+     */
     @Override
     protected void onResume() {
         super.onResume();
         presenter.clearValue();
     }
 
+    /**
+     * 버튼 클릭 이벤트 처리
+     */
     View.OnClickListener onClickListener = new View.OnClickListener() {
         @Override
         public void onClick(View view) {
@@ -126,7 +132,6 @@ public class CalculatorActivity extends AppCompatActivity implements ICalculator
     @Override
     public void setProgressValueText(String processText) {
         progressValueTxt.setText(processText);
-
     }
 
     @Override

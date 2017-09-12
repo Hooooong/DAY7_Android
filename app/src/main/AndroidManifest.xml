@@ -1,6 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="hooooong.com.basiclayout">
+    package="hooooong.com.basiclayout">\
+
+
 
     <application
         android:allowBackup="true"
@@ -20,8 +22,7 @@
         <activity android:name=".GridActivity"/>
         <activity android:name=".LinearActivity"/>
         <activity android:name=".RelativeActivity" />
-        <activity android:name=".View.CalculatorActivity"
-            />
+        <activity android:name=".View.CalculatorActivity" android:label="Calculator"/>
 
     </application>
 

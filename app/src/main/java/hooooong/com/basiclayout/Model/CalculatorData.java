@@ -8,6 +8,7 @@ import java.util.ArrayList;
 
 public class CalculatorData {
 
+    // 숫자 와 연산자를 저장하는 ArrayList
     private ArrayList<String> progressValue;
 
     private static CalculatorData calculator;

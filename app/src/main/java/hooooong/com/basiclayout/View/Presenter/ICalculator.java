@@ -10,7 +10,9 @@ public interface ICalculator {
 
     interface View{
 
+        // 연산식을 보여주기 위한 메소드
         void setProgressValueText(String processText);
+        // 현재 누른 값과 결과값을 보여주기 위한 메소드
         void setValueText(String value);
     }
 
