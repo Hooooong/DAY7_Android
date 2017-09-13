@@ -103,7 +103,7 @@ public class CalculatorPresenter implements ICalculator.Presenter{
                 calculation += txt;
             }
 
-            view.setProgressValueText(calculation);
+            view.setPreviewText(calculation);
         }
     }
 
@@ -120,7 +120,7 @@ public class CalculatorPresenter implements ICalculator.Presenter{
 
         calculatorData.setProgressValue(numberArray);
         view.setValueText("");
-        view.setProgressValueText("");
+        view.setPreviewText("");
     }
 
     /**
@@ -274,7 +274,7 @@ public class CalculatorPresenter implements ICalculator.Presenter{
             view.setValueText(numberArray.get(0));
 
             calculation += "=";
-            view.setProgressValueText(calculation);
+            view.setPreviewText(calculation);
         }
     }
 

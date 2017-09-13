@@ -108,6 +108,7 @@ public class MainActivity extends AppCompatActivity{
                     break;
                 case R.id.btnCalculator:
                     intent = new Intent(MainActivity.this, CalculatorActivity.class);
+                    // or intent = new Intent(getBaseContext(), CalculatorActivity.class);
                     break;
 
             }

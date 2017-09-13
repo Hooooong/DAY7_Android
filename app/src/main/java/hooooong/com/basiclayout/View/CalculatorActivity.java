@@ -20,20 +20,33 @@ public class CalculatorActivity extends AppCompatActivity implements ICalculator
     private CalculatorPresenter presenter;
 
     TextView valueTxt;
-    TextView progressValueTxt;
+    TextView previewTxt;
 
     @Override
     protected void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_calculator);
 
-        valueTxt = (TextView)findViewById(R.id.valueTxt);
-        progressValueTxt = (TextView)findViewById(R.id.progressValueTxt);
+        initView();
+        initListener();
 
         presenter = new CalculatorPresenter();
         presenter.attachView(this);
         presenter.setCalculatorData(CalculatorData.getInstance());
+    }
 
+    /**
+     *
+     */
+    public void initView(){
+        valueTxt = (TextView)findViewById(R.id.valueTxt);
+        previewTxt = (TextView)findViewById(R.id.previewTxt);
+    }
+
+    /**
+     * Listener 초기화
+     */
+    public void initListener(){
         findViewById(R.id.number1).setOnClickListener(onClickListener);
         findViewById(R.id.number2).setOnClickListener(onClickListener);
         findViewById(R.id.number3).setOnClickListener(onClickListener);
@@ -50,7 +63,6 @@ public class CalculatorActivity extends AppCompatActivity implements ICalculator
         findViewById(R.id.multiple).setOnClickListener(onClickListener);
         findViewById(R.id.eqaul).setOnClickListener(onClickListener);
         findViewById(R.id.reset).setOnClickListener(onClickListener);
-
     }
 
     /**
@@ -130,12 +142,35 @@ public class CalculatorActivity extends AppCompatActivity implements ICalculator
     }
 
     @Override
-    public void setProgressValueText(String processText) {
-        progressValueTxt.setText(processText);
+    public void setPreviewText(String processText) {
+        previewTxt.setText(processText);
     }
 
     @Override
     public void setValueText(String value) {
         valueTxt.setText(value);
+    }
+
+    @Override
+    public void setValueFontSize(String value) {
+        switch (value.length()){
+            case 11:
+                valueTxt.setTextSize(20);
+                break;
+            case 12:
+                break;
+            case 13:
+                break;
+            case 14:
+                break;
+            case 15:
+                break;
+            case 16:
+                break;
+            case 17:
+                break;
+            case 18:
+                break;
+        }
     }
 }
