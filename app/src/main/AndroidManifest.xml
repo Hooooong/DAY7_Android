@@ -22,9 +22,6 @@
         <activity android:name=".GridActivity"/>
         <activity android:name=".LinearActivity"/>
         <activity android:name=".RelativeActivity" />
-        <activity android:name=".View.CalculatorActivity"
-            android:configChanges="orientation|screenSize"
-            />
 
     </application>
 
