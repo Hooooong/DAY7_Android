@@ -19,7 +19,7 @@ ____________________________________________________
 
     - Android Framwork 구조
 
-        ![Android Framework]()
+        ![Android Framework](https://github.com/Hooooong/DAY7_Android/blob/master/image/android-stack_2x.png)
 
 
         - Linux Kernel, Hardware Abstraction Layer(HAL), Native C/C++ Libraries, Android Runtime, Java API FrameWokr 로 구성되어 있다.( 참조 : [__Android Platform Architecture__](https://developer.android.com/guide/platform/index.html#art))
