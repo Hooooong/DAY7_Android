@@ -21,7 +21,9 @@ ____________________________________________________
 
   ![Android Framework](https://github.com/Hooooong/DAY7_Android/blob/master/image/android-stack_2x.png)
 
-  - Linux Kernel, Hardware Abstraction Layer(HAL), Native C/C++ Libraries, Android Runtime, Java API Framework 로 구성되어 있다.( 참조 : [__Android Platform Architecture__](https://developer.android.com/guide/platform/index.html#art))
+  - Linux Kernel, Hardware Abstraction Layer(HAL), Native C/C++ Libraries, Android Runtime, Java API Framework 로 구성되어 있다.
+
+  - 참조 : [Android Platform Architecture](https://developer.android.com/guide/platform/index.html#art)
 
 - Android Layout 이란?
 
@@ -29,7 +31,7 @@ ____________________________________________________
 
 - Android Layout 종류
 
-  > Layout 중 가장 많이 사용되는 LinearLayout, RelativeLayout, FrameLayout, GridLayout, ConstraintLayout 이 있다.
+  - Layout 중 가장 많이 사용되는 LinearLayout, RelativeLayout, FrameLayout, GridLayout, ConstraintLayout 이 있다.
 
   - __LinearLayout__
 
